@@ -22,3 +22,5 @@ async function RequestConcept(req, res) {
 
     res.type('application/json').send(response);
 }
+
+app.listen(port, () => console.log(`Listening on port ${port}!`));
