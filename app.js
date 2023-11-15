@@ -11,6 +11,12 @@ async function RequestConcept(req, res) {
     const email = req.query.email;
     const message = req.query.message;
 
+    const response = {
+        name: name,
+        email: email,
+        message: message
+    };
+
     console.log("NEW ENTRY: " + name + email + message);
     console.log("___________________________________________________________________");
 
