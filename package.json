@@ -12,6 +12,6 @@
     "express": "^4.18.2"
   },
   "engines": {
-    "node": "lts"
+    "node": ">=20.9.0"
   }
 }
