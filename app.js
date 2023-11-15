@@ -30,15 +30,14 @@ async function RequestConcept(req, res) {
         text: response
     };
 
-    transporter.sendMail(mailOptions, function (error, info) {
-        if (error) {
+    await transporter.sendMail(mailOptions, function (error, info) {
+        if (error)
             console.log(error);
-            res.type('application/json').send("Aw snap! Something went wrong.");
-        } else {
+        else
             console.log('Email sent: ' + info.response);
-            res.type('application/json').send("Email sent!");
-        }
     });
+
+    res.type('application/json').send("Email maybe sent!");
 
 }
 
