@@ -3,15 +3,9 @@
   "version": "1.0.0",
   "description": "A simple server script",
   "main": "app.js",
-  "scripts": {
-    "start": "node app.js"
-  },
   "author": "Dennis Hawran",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
-  },
-  "engines": {
-    "node": ">=20.9.0"
   }
 }
